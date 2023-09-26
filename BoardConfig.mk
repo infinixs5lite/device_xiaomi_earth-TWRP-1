@@ -6,6 +6,11 @@
 
 DEVICE_PATH := device/xiaomi/earth
 
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # AB
 AB_OTA_UPDATER := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
@@ -133,6 +138,4 @@ TW_H_OFFSET := -60
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
-
-# Hack depends
-ALLOW_MISSING_DEPENDENCIES := true
+TW_DEVICE_VERSION := Build By NINO
