@@ -45,6 +45,8 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+TARGET_RECOVERY_DEVICE_MODULES += libgflagsp snapuserd
+
 # Health Hal
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
